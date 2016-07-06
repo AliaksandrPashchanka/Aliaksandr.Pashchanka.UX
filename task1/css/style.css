@@ -182,6 +182,17 @@ input, select {
 .form_submit_button:hover {
   opacity: .9;
 }
+input:focus:invalid, textarea:focus:invalid { 
+  background: #fff url(../img/invalid.png) no-repeat 98% center;
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535
+}
+input:required:valid, textarea:required:valid { 
+  background: #fff url(../img/valid.png) no-repeat 98% center;
+  box-shadow: 0 0 5px #5cd053;
+  border-color: #28921f;
+
+}
 .required::after {
   display: inline-block;
   content: '*';
@@ -269,21 +280,8 @@ input, select {
   .subheading {
     font-size: 10px;
   }
-  .form_field label {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .form_field input, .form_field select {
-    width: 100%;
-    margin-bottom: 20px;
-  }
   .form_submit {
     text-align: center;
-  }
-  .form_submit_button {
-    width: 100%;
-    padding: 10px 20px;
   }
 }
 
